@@ -1,0 +1,54 @@
+.URLs-container{
+    width: 500px;
+    height: 400px;
+    overflow: scroll;
+    border-style: groove;
+    padding: 2%;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a{
+    display: block;
+}
+
+header{
+    text-align: center;
+    border-bottom:solid;
+    margin-bottom: 50px;
+}
+
+.in-main{
+    display: flex;
+    justify-content: space-between;
+}
+.configuration-menu{
+    padding: 5%;
+    border-style: groove;
+}
+.title{
+    display: block;
+    text-align: center;
+}
+
+.text-field{
+    width: 80%;
+    height: 20px;
+}
+.field{
+    margin: 2%;
+}
+
+.how-to-use{
+    padding: 2%;
+    padding-top: 0;
+}
+
+.main-button{
+    display: flex;
+    align-content: center;
+    align-content: center;
+    align-items: center;
+}

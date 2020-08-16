@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Word Scrapper</title>
+    <link rel="stylesheet" href="static/css/styles.css">
+    <script src="static/js/websocketcliend.js"> </script>
+</head>
+<body>
+    <header>
+        <h1>WordScraper1.0beta</h1>
+    </header>
+    
+    <main class="in-main">
+        <div class="URLs-container">
+            <div class="title">
+                <h2>Finded</h2>
+            </div>
+            <div class="URLs-finded" id="URLs">
+            </div>
+        </div>
+        <aside class="configuration-menu">
+            <div class="field">
+                <label for="url">URL</label>
+                <input type="text" class="text-field" name="url" id="url">
+            </div>
+            <div class="field">
+                <label for="word">Word</label>
+                <input type="text" class="text-field" name="word" id="word">
+            </div>
+
+            <div class="field">
+                <label for="regex">Use Regular Expresion</label>
+                <input type="checkbox" name="regex" id="regex">
+            </div>
+            <div class="field">
+                <label for="domains-filter">Domains Filter</label>
+                <input type="checkbox" name="domains-filter" id="domains-filter" onclick="checkWhiteList()">
+            </div>
+            <div class="field">
+                <textarea name="whitelist" class="whitelist" id="whitelist" cols="30" rows="10" disabled></textarea>
+            </div>
+            <div class="main-button">
+                <input type="button" id="start-button" class="start-button" value="Start" onclick="sendMessage()">
+            </div>
+        </aside>
+    </main>
+    <div class="how-to-use">
+        <h3>How to used:</h3>
+        <ul>
+            <li>
+                URL: here goes the COMPLETE url you want to scrap
+            </li> 
+            <li>
+                Word:The word you wand to scrap in the URL and inner url in this
+            </li>
+            <li>
+                Use Regular Expresion: check this if you want to use regular expresion on the word you type
+            </li>
+            <li>
+                Domains Filter: check this is you wand to scan only in certain domain. Put the domains you want below separated by commas(only the domain)
+            </li>
+        </ul>
+
+
+    </div>
+    
+    
+</body>
+</html>
